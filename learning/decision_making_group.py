@@ -1,20 +1,21 @@
-
 ########################################decision making in python#####################################
-
-
 
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
-
+num1 = int(input("A number?"))
+num2 = int(input("Another number?"))
 # "num1 is greater than num2"
-
+if num1 > num2:
+    print(f'{num1}" is greater than "{num2}')
 # "num2 is greater than num1"
-
+elif num1 < num2:
+    print(f'{num2}" is greater than "{num1}')
 # "num1 and num2 are equal"
-
+elif num1 == num2:
+    print(f'{num1} " and " {num2}' " are equal")
 # You must display the value of the user input instead of num1 and num2.
-# num1 = input("Enter a number:")
-# num2 = input("Enter another number:")
+num1 = int(input("Enter a number:"))
+num2 = int(input("Enter another number:"))
 
 # f"{num1} is greater than {num2}"
 # "num2 is greater than num1"
@@ -35,7 +36,13 @@
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
 age = 16
 has_license = False
-
+if age >= 18 :
+    print("You can drive")
+elif age < 18 : 
+    print("You can't drive yet. You must be 18 years old and have a license.")
+elif age != 18:
+    print("You can't drive. You need to have a license")
+    
 "You can drive"
 
 "You can't drive yet. You must be 18 years old and have a license"
@@ -83,7 +90,17 @@ knows_python = False
 # If age is less than 40 then print i am a tricenarian
 
 # If age is less than 50 then print I am quadragenarian
-
+name1= "Lesly" 
+name2= "Nat" 
+age=15
+if age < 20:
+    print ("I am young ")
+elif age < 30:
+    print ("I am vicenarian") 
+elif age < 40 :
+    print("I am a Tricenarian")
+elif age < 50:
+     print("I am a quadragenarian ")
 
 # Decision Making Practice #5
 # ask the user for their age
@@ -95,6 +112,12 @@ knows_python = False
 # The program prompts the user for their age and outputs their eligibility.
 
 # Prompt the user for age
-
+age = int(input("What is your age?"))
 
 # Check conditions for voting, drinking, and retirement
+if age >= 18:
+    print("You are eligible to vote.")
+elif age >= 21:
+    print("You are eligible to drink.")
+elif age >= 66:
+    print("You are eligible to retire.")
